@@ -219,10 +219,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ##Added Files for bootsound and themes
 PRODUCT_COPY_FILES += \
-    device/huawei/m835/include/app/RoverCyan.apk:system/app/RoverCyan.apk \
-    device/huawei/m835/include/app/com.mike.theme.hc3d3d-1.apk:system/app/com.mike.theme.hc3d3d-1.apk \
-    device/huawei/m835/include/app/DarkADBWireless-v1.apk:system/app/DarkADBWireless-v1.apk \
-    device/huawei/m835/include/app/com.elgubbo.a2sdGUI-1.apk:system/app/com.elgubbo.a2sdGUI-1.apk \
     device/huawei/m835/include/bin/bootsound:system/bin/bootsound \
     device/huawei/m835/include/media/audio/ui/android_audio.mp3:system/media/audio/ui/android_audio.mp3 \
     device/huawei/m835/include/media/bootanimation.zip:system/media/bootanimation.zip \
