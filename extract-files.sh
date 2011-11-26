@@ -6,6 +6,7 @@ DIRS="
 bin
 etc
 lib/hw
+wifi
 "
 for DIR in $DIRS; do
 	mkdir -p ../../../vendor/huawei/ascend/proprietary/$DIR
@@ -59,6 +60,10 @@ lib/libmmipl.so
 lib/libmmprocess.so
 
 etc/init.qcom.bt.sh
+
+wifi/ar6000.ko
+wifi/firmware_apsta.bin
+wifi/nvram.txt
 "
 for FILE in $FILES; do
 	adb pull system/$FILE ../../../vendor/huawei/ascend/proprietary/$FILE
