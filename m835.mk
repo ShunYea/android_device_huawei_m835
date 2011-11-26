@@ -207,15 +207,17 @@ PRODUCT_NAME := generic_m835
 PRODUCT_DEVICE := m835
 PRODUCT_MODEL := HUAWEI-M835
 PRODUCT_BOARD := M835
+PRODUCT_LOCALES := zh_CN zh_TW en_US
+PRODUCT_DEFAULT_REGION := CN
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.clientidbase=android-huawei-us \
+    ro.com.google.clientidbase=android-ChinaTelecom \
     ro.com.google.locationfeatures=1 \
-    ro.cdma.home.operator.numeric=31016 \
+    ro.cdma.home.operator.numeric=46003 \
     ro.config.cdma_subscription=1 \
     ro.cdma.voicemail.number=mine \
     ro.setupwizard.enable_bypass=1 \
-    ro.config.play.bootsound=1
+    ro.config.play.bootsound=0
 
 ##Added Files for bootsound and themes
 PRODUCT_COPY_FILES += \
