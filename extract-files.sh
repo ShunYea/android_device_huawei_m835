@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir -p ../../../vendor/huawei/ascend/proprietary
+mkdir -p ../../../vendor/huawei/m835/proprietary
 
 DIRS="
 bin
@@ -9,7 +9,7 @@ lib/hw
 wifi
 "
 for DIR in $DIRS; do
-	mkdir -p ../../../vendor/huawei/ascend/proprietary/$DIR
+	mkdir -p ../../../vendor/huawei/m835/proprietary/$DIR
 done
 
 FILES="
@@ -66,7 +66,7 @@ wifi/firmware_apsta.bin
 wifi/nvram.txt
 "
 for FILE in $FILES; do
-	adb pull system/$FILE ../../../vendor/huawei/ascend/proprietary/$FILE
+	adb pull system/$FILE ../../../vendor/huawei/m835/proprietary/$FILE
 done
 
-chmod 755 ../../../vendor/huawei/ascend/proprietary/bin/* 
+chmod 755 ../../../vendor/huawei/m835/proprietary/bin/* 
